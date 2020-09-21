@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Выбор отелей в Седоне</title>
+    <title>Жилье в Седоне</title>
   </head>
-  <body>
-    <header>
 
+  <body>
+
+    <header>
+      <a href="index.html">
+        <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
+      </a>
       <nav>
-        <a href="index.html">
-          <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
-        </a>
         <ul>
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
@@ -18,17 +19,72 @@
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-
     </header>
 
     <main>
-      <h1>Выбор отелей в Седоне</h1>
+      <h1>Жилье в Седоне</h1>
+
+      <section>
+        <h2>Фильтр жилья</h2>
+        <!-- Здесь будет форма фильтра -->
+      </section>
+
+      <section> <!-- Долго думал, объединять ли блок сортировки и блок самих результатов в один section. В итоге решил, что это скорее единый section, чем два разных -->
+        <h2>Список жилья</h2>
+        <h3>Найдено:3</h3>
+        <p>Сортировка:</p>
+        <ul>
+          <li><a>По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
+        </ul>
+        <button type="button">По убыванию</button>
+        <button type="button" disabled>По возрастанию</button>
+        <ul>
+          <li>
+            <h3>Amara resort & spa</h3>
+            <p>
+              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на гостиницу">
+            </p>
+            <p>Гостиница</p>
+            <p>От 4000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+            <p>★★★★</p> <!-- Сделал пока просто через параграф, т.к. ни в ТЗ, ни в Стайлгайде, ни в критериях нет требования к реализации "интерактивности" этого элемента. Так что пока сосредоточился на более приоритетных задачах. -->
+            <p>Рейтинг: 8,5</p>
+          </li>
+          <li>
+            <h3>Desert Quail Inn</h3>
+            <p>
+              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на мотель">
+            </p>
+            <p>Мотель</p>
+            <p>От 3000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+            <p>★★★</p>
+            <p>Рейтинг: 8,9</p>
+          </li>
+          <li>
+            <h3>Villas At Poco Diablo</h3>
+            <p>
+              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на апартаменты">
+            </p>
+            <p>Апартаменты</p>
+            <p>От 2000 р.</p>
+            <a href="">Подробнее</a>
+            <a href="">Забронировать</a>
+            <p>★★</p>
+            <p>Рейтинг: 9,2</p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
       <section>
         <h2>Как с нами связаться</h2>
-        <p>#visitsedona</p>
+        <a href="">#visitsedona</a>
         <p>Тел: <a href="tel:+7111111111">+7(495) 666-01-66</a></p>
       </section>
       <section>
