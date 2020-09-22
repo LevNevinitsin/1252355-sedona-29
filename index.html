@@ -1,81 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья в городе Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <a>
-        <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="header-wrapper">
 
+        <a class="main-header-logo">
+          <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+
+      </div>
     </header>
 
-    <main>
+    <main class="container">
 
       <h1>Поиск жилья в городе Седона</h1>
 
-      <section>
+      <section class="banner-welcome">
         <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Баннер с приветствием, слоганом и видом на природу">
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
 
-      <section>
+      <section class="feature-1">
         <h2>Настоящий городок</h2>
         <p>- №1 -</p>
         <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Фотография фасада одного из домов с вывесками и флагом">
       </section>
-      <section>
+      <section class="useful-info">
         <h2>Полезная информация</h2>
-        <ul>
-          <li>
+        <ul class="useful-info-list">
+          <li class="useful-info-item">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем отеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="useful-info-item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="useful-info-item">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="feature-2">
         <h2>Там есть Мост Дьявола</h2>
         <p>- №2 -</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Фотография Моста Дьвола">
       </section>
-      <section>
-        <h2>Еще три преимущества</h2> <!-- Долго думал, как тут озаглавить. Ничего лучше не придумал -->
-        <ul> <!-- Не до конца уверен, что тут стоит делать список, можно и дивами разметить вроде как -->
-          <li>
+      <section class="features-3-5">
+        <h2>Еще три преимущества</h2>
+        <ul class="features-3-5-list">
+          <li class="feature-item">
             <h3>Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Мало туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -83,48 +89,48 @@
         </ul>
       </section>
 
-      <section>
+      <section class="search-hotel">
         <h2>Поиск гостиницы в Седоне</h2>
         <h3>Заинтересовались?</h3>
         <p>
           Укажите предпологаемые даты поездки,<br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button-section-switch" type="button">Поиск гостиницы в Седоне</button>
         <!-- Здесь будет форма ввода параметров для поиска гостиницы -->
-        <button type="button">Найти</button>
+        <button class="button button-find" type="button">Найти</button>
       </section>
 
-      <section>
+      <section class="sedona-geo">
         <h2>Георгафическое расположение Седоны</h2>
         <img src="https://via.placeholder.com/1199x594" width="1199" height="594" alt="Где находится Седона на карте">
       </section>
 
     </main>
 
-    <footer>
-      <section>
+    <footer class="page-footer main-footer">
+      <section class="footer-contacts">
         <h2>Как с нами связаться</h2>
-        <a href="">#visitsedona</a>
-        <p>Тел: <a href="tel:+7111111111">+7(495) 666-01-66</a></p>
+        <a class="footer-hashtag" href="">#visitsedona</a>
+        <p>Тел: <a class="footer-phone" href="tel:+7111111111">+7(495) 666-01-66</a></p>
       </section>
-      <section>
+      <section class="footer-social">
         <h2>Социальные сети</h2>
-        <ul>
-          <li>
-            <a href="">Твиттер</a>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Твиттер</a>
           </li>
-          <li>
-            <a href="">Фейсбук</a>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Фейсбук</a>
           </li>
-          <li>
-            <a href="">Ютуб</a>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Ютуб</a>
           </li>
         </ul>
       </section>
-      <p>
+      <p class="footer-copyright">
         Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
 

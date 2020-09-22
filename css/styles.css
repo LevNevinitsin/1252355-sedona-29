@@ -1,0 +1,282 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --basic-very-dark: #231F20;
+  --basic-dark: #333333;
+  --basic-darkest-gray: #666666;
+  --basic-even-darker-gray: #6a6a6a;
+  --basic-darker-gray: #cacaca;
+  --basic-dark-gray: #a9a9a9;
+  --basic-few-dark-gray: #bdbbbc;
+  --basic-gray: #e5e5e5;
+  --basic-light-gray: #ebebeb;
+  --basic-lighter-gray: #eeeeee;
+  --basic-lightest-gray: #f2f2f2;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-white-high-opacity: rgba(255, 255, 255, 0.9);
+  --basic-white: #ffffff;
+
+  --basic-light-brown: #766357;
+  --basic-neutral-brown: #604E43;
+  --basic-darker-brown: #503E33;
+
+  --basic-lightest-blue: #c9dce8;
+  --basic-light-blue: #81b3d2;
+  --basic-light-blue-logo: #81b3d3;
+  --basic-neutral-blue: #669ec0;
+  --basic-darker-blue: #5496bd;
+}
+
+/* Global */
+.page-body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-lightest-gray);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.header-wrapper {
+  background-color: var(--basic-white);
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+  line-height: 26px;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-light-blue);
+}
+
+.site-navigation a:active {
+  color: var(--basic-black-opacity);
+}
+
+/* Welcome */
+
+.banner-welcome {
+  background-color: var(--basic-white);
+}
+
+.banner-welcome img {
+  background-color: var(--basic-lightest-blue);
+} /* Если картинка не загрузится, на этом фоне будут видны все svg-картинки с надписями "Welcome", "to the gorgeous" и т.д. Их вроде надо так делать, хотя будь моя воля я бы вырезал картинку вместе с надписями целиком одним jpg-файлом. Вероятно, я чего-то не понимаю */
+
+
+.banner-welcome h2 {
+  font-size: 21px;
+  background-color: var(--basic-white);
+}
+
+.banner-welcome h2,
+.banner-welcome p {
+  background-color: var(--basic-white);
+  text-align: center;
+  line-height: 26px;
+}
+
+/* Features 1 & 2 */
+
+.feature-1,
+.feature-2 {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+}
+
+.feature-1 h2,
+.feature-1 p,
+.feature-2 h2,
+.feature-2 p {
+  text-align: center;
+}
+
+.feature-1 h2,
+.feature-2 h2 {
+  font-size: 21px;
+}
+
+/* Useful info */
+
+.useful-info {
+  background-color: var(--basic-white);
+}
+
+.useful-info h3 {
+  font-size: 21px;
+}
+
+.useful-info-list {
+  list-style: none;
+  text-align: center;
+}
+
+/* Features 3-5 */
+
+.features-3-5 {
+  background-color: var(--basic-lighter-gray);
+}
+
+.features-3-5 h3 {
+  font-size: 21px;
+}
+
+.features-3-5-list {
+  list-style: none;
+}
+
+.features-3-5-list li {
+  text-align: center;
+}
+
+/* Search hotel */
+
+.search-hotel {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.search-hotel h3 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.search-hotel p {
+  line-height: 24px;
+}
+
+.button {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-section-switch {
+  background-color: var(--basic-light-brown);
+}
+
+.button-section-switch:hover {
+  background-color: var(--basic-neutral-brown);
+}
+
+.button-section-switch:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-darker-brown);
+}
+
+.button-find {
+  background-color: var(--basic-light-blue);
+}
+
+.button-find:hover {
+  background-color: var(--basic-neutral-blue);
+}
+
+.button-find:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-darker-blue);
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--basic-white-high-opacity);
+}
+
+/* Footer-contacts */
+
+.footer-contacts {
+  text-align: center;
+}
+
+.footer-contacts a,
+.footer-contacts p {
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Footer-social */
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-list-item {
+   margin-bottom: 9px;
+ }
+
+.footer-social-list-item:last-child {
+   margin-bottom: 0px;
+ }
+
+.social-button {
+  background-color: var(--basic-light-blue);
+  font-size: 21px;
+  color: var(--basic-white);
+}
+
+.social-button:hover {
+  background-color: var(--basic-neutral-blue);
+}
+
+.social-button:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-darker-blue);
+}
+
+/* Footer-copyright */
+
+.footer-copyright {
+  text-align: center;
+}
+
+.copyright-link {
+  color: var(--basic-very-dark);
+}
+
+.copyright-link:hover {
+  color: var(--basic-light-blue);
+}
+
+.copyright-link:active {
+  color: var(--basic-few-dark-gray);
+}
