@@ -3,112 +3,112 @@
   <head>
     <meta charset="UTF-8">
     <title>Жилье в Седоне</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body class="page-body">
+  <body>
 
-    <header>
-      <a href="index.html">
-        <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+    <div class="container">
+
+      <header class="main-header">
+        <h1>Жилье в Седоне</h1>
+        <a  class="main-header-logo" href="index.html">
+          <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
+        </a>
+        <nav class="main-navigation">
+          <h2>Навигация по сайту</h2>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Фильтр жилья</h2>
+          <!-- Здесь будет форма фильтра -->
+        </section>
+
+        <section class="lodging-found">
+          <h2>Список жилья</h2>
+          <p class="lodging-found-count">Найдено:3</p>
+          <p class="lodging-found-sort">Сортировка:</p>
+          <ul class="lodging-found-sort-by">
+            <li><a class="sorted-by">По цене</a></li>
+            <li><a class="not-sorted-by" href="">По типу</a></li>
+            <li><a class="not-sorted-by" href="">По рейтингу</a></li>
+          </ul>
+          <button type="button">По убыванию</button>
+          <button type="button" disabled>По возрастанию</button>
+          <ul class="lodging-found-list">
+            <li class="lodging-found-list-item">
+              <h3 class="lodging-name">Amara resort & spa</h3>
+              <div class="lodging-image">
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на гостиницу">
+              </div>
+              <p class="lodging-type">Гостиница</p>
+              <p class="lodging-price">От 4000 р.</p>
+              <a class="lodging-more-details" href="">Подробнее</a>
+              <a class="lodging-book" href="">Забронировать</a>
+              <p class="lodging-rating-stars">★★★★</p> <!-- Сделал пока просто через параграф, т.к. ни в ТЗ, ни в Стайлгайде, ни в критериях нет требования к реализации "интерактивности" этого элемента. Так что пока сосредоточился на более приоритетных задачах. -->
+              <p class="lodging-rating">Рейтинг: 8,5</p>
+            </li>
+            <li class="lodging-found-list-item">
+              <h3 class="lodging-name">Desert Quail Inn</h3>
+              <div class="lodging-image">
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на мотель">
+              </div>
+              <p class="lodging-type">Мотель</p>
+              <p class="lodging-price">От 3000 р.</p>
+              <a class="lodging-more-details" href="">Подробнее</a>
+              <a class="lodging-book" href="">Забронировать</a>
+              <p class="lodging-rating-stars">★★★</p>
+              <p class="lodging-rating">Рейтинг: 8,9</p>
+            </li>
+            <li class="lodging-found-list-item">
+              <h3 class="lodging-name">Villas At Poco Diablo</h3>
+              <div class="lodging-image">
+                <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на апартаменты">
+              </div>
+              <p class="lodging-type">Апартаменты</p>
+              <p class="lodging-price">От 2000 р.</p>
+              <a class="lodging-more-details" href="">Подробнее</a>
+              <a class="lodging-book" href="">Забронировать</a>
+              <p class="lodging-rating-stars">★★</p>
+              <p class="lodging-rating">Рейтинг: 9,2</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="page-footer main-footer">
+        <div class="footer-contacts">
+          <a class="footer-hashtag" href="">#visitsedona</a>
+          <p>Тел: <a class="footer-phone" href="tel:+7111111111">+7(495) 666-01-66</a></p>
+        </div>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Твиттер</a>
+          </li>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Фейсбук</a>
+          </li>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Ютуб</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+        <div class="footer-copyright">
+          Website by
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </div>
+      </footer>
 
-    <main>
-      <h1>Жилье в Седоне</h1>
-
-      <section>
-        <h2>Фильтр жилья</h2>
-        <!-- Здесь будет форма фильтра -->
-      </section>
-
-      <section> <!-- Долго думал, объединять ли блок сортировки и блок самих результатов в один section. В итоге решил, что это скорее единый section, чем два разных -->
-        <h2>Список жилья</h2>
-        <h3>Найдено:3</h3>
-        <p>Сортировка:</p>
-        <ul>
-          <li><a>По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По рейтингу</a></li>
-        </ul>
-        <button type="button">По убыванию</button>
-        <button type="button" disabled>По возрастанию</button>
-        <ul>
-          <li>
-            <h3>Amara resort & spa</h3>
-            <p>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на гостиницу">
-            </p>
-            <p>Гостиница</p>
-            <p>От 4000 р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <p>★★★★</p> <!-- Сделал пока просто через параграф, т.к. ни в ТЗ, ни в Стайлгайде, ни в критериях нет требования к реализации "интерактивности" этого элемента. Так что пока сосредоточился на более приоритетных задачах. -->
-            <p>Рейтинг: 8,5</p>
-          </li>
-          <li>
-            <h3>Desert Quail Inn</h3>
-            <p>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на мотель">
-            </p>
-            <p>Мотель</p>
-            <p>От 3000 р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <p>★★★</p>
-            <p>Рейтинг: 8,9</p>
-          </li>
-          <li>
-            <h3>Villas At Poco Diablo</h3>
-            <p>
-              <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Вид на апартаменты">
-            </p>
-            <p>Апартаменты</p>
-            <p>От 2000 р.</p>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
-            <p>★★</p>
-            <p>Рейтинг: 9,2</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <section>
-        <h2>Как с нами связаться</h2>
-        <a href="">#visitsedona</a>
-        <p>Тел: <a href="tel:+7111111111">+7(495) 666-01-66</a></p>
-      </section>
-      <section>
-        <h2>Социальные сети</h2>
-        <ul>
-          <li>
-            <a href="">Твиттер</a>
-          </li>
-          <li>
-            <a href="">Фейсбук</a>
-          </li>
-          <li>
-            <a href="">Ютуб</a>
-          </li>
-        </ul>
-      </section>
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
-    </footer>
+    </div>
 
   </body>
 </html>

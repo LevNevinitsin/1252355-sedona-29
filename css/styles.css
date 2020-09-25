@@ -30,8 +30,8 @@
 }
 
 /* Global */
-.page-body {
-  min-width: 1220px;
+body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -51,9 +51,13 @@ img {
   height: auto;
 }
 
+.container {
+  min-width: 1220px;
+}
+
 /* Main header */
 
-.header-wrapper {
+.main-header {
   background-color: var(--basic-white);
 }
 
@@ -164,9 +168,10 @@ img {
   text-align: center;
 }
 
-.search-hotel h3 {
+.search-hotel .interest {
   font-size: 30px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .search-hotel p {
@@ -232,12 +237,9 @@ img {
 
 /* Footer-social */
 
-.footer-social {
-  text-align: center;
-}
-
 .footer-social-list {
   list-style: none;
+  text-align: center;
 }
 
 .footer-social-list-item {
@@ -279,4 +281,92 @@ img {
 
 .copyright-link:active {
   color: var(--basic-few-dark-gray);
+}
+
+/* Lodging found */
+
+.lodging-found {
+  background-color: var(--basic-white);
+}
+
+.lodging-found-count {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.lodging-found-sort,
+.lodging-found-sort-by {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.lodging-found-sort-by .not-sorted-by {
+  color: var(--basic-black-opacity);
+  border-bottom: 1px dashed var(--basic-light-blue);
+}
+/* Border-style в фигме указан, как dashed, хотя по внешнему виду больше подходит dotted.  */
+
+.lodging-found-sort-by .not-sorted-by:hover {
+  color: var(--basic-light-blue);
+}
+
+.lodging-found-sort-by .not-sorted-by:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+.lodging-found-sort-by .sorted-by {
+  color: var(--basic-light-blue);
+}
+
+/* Lodging list */
+
+.lodging-found-list h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.lodging-type,
+.lodging-price {
+  color: var(--basic-dark);
+}
+
+.lodging-more-details {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.lodging-more-details:hover {
+  background-color: var(--basic-neutral-blue);
+}
+
+.lodging-more-details:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-darker-blue);
+}
+
+.lodging-book {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+}
+
+.lodging-book:hover {
+  background-color: var(--basic-neutral-brown);
+}
+
+.lodging-book:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-darker-brown);
+}
+
+.lodging-rating-stars {
+  color: var(--basic-light-blue);
+}
+
+.lodging-rating {
+  background-color: var(--basic-lightest-gray);
 }
