@@ -3,53 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <title>Пустая страница</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
 
-    <header>
-      <a href="index.html">
-        <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+    <div class="container">
+
+      <header class="main-header">
+        <h1>Пустая страница</h1>
+        <a  class="main-header-logo" href="index.html">
+          <img src="https://via.placeholder.com/137x70" width="137" height="70" alt="Логотип сайта по поиску жилья в Седоне">
+        </a>
+        <nav class="main-navigation">
+          <h2>Навигация по сайту</h2>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+      </main>
+
+      <footer class="page-footer main-footer">
+        <div class="footer-contacts">
+          <a class="footer-hashtag" href="">#visitsedona</a>
+          <p>Тел: <a class="footer-phone" href="tel:+7111111111">+7(495) 666-01-66</a></p>
+        </div>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Твиттер</a>
+          </li>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Фейсбук</a>
+          </li>
+          <li class="footer-social-list-item">
+            <a class="social-button" href="">Ютуб</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h1>Пустая страница</h1>
-    </main>
-
-    <footer>
-      <section>
-        <h2>Как с нами связаться</h2>
-        <a href="">#visitsedona</a>
-        <p>Тел: <a href="tel:+7111111111">+7(495) 666-01-66</a></p>
-      </section>
-      <section>
-        <h2>Социальные сети</h2>
-        <ul>
-          <li>
-            <a href="">Твиттер</a>
-          </li>
-          <li>
-            <a href="">Фейсбук</a>
-          </li>
-          <li>
-            <a href="">Ютуб</a>
-          </li>
-        </ul>
-      </section>
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
-    </footer>
-
+        <div class="footer-copyright">
+          Website by
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
