@@ -58,6 +58,8 @@ img {
   height: auto;
 }
 
+/* Grid */
+
 .container {
   min-height: 100%;
   display: grid;
@@ -68,13 +70,11 @@ img {
   background-color: var(--basic-white);
 }
 
-/* Grid */
-
-
-
 /* Main header */
 
 .main-header {
+  width: 1054px;
+  margin: 0 auto;
   background-color: var(--basic-white);
 }
 
@@ -111,7 +111,6 @@ img {
 .banner-welcome img {
   background-color: var(--basic-lightest-blue);
 }
-
 
 .banner-welcome h2 {
   font-size: 21px;
@@ -435,9 +434,18 @@ img {
   color: var(--basic-few-dark-gray);
 }
 
+/* Lodging filter */
+
+.lodging-filter {
+  width: 1054px;
+  margin: 0 auto;
+}
+
 /* Lodging found */
 
 .lodging-found {
+  width: 1054px;
+  margin: 0 auto;
   background-color: var(--basic-white);
 }
 
@@ -445,6 +453,12 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.lodging-found-sort-by,
+.lodging-found-list {
+  padding: 0px;
+  list-style: none;
 }
 
 .lodging-found-sort,
@@ -473,10 +487,61 @@ img {
 
 /* Lodging list */
 
-.lodging-found-list h3 {
+.lodging-found-list-item {
+  display: grid;
+  grid-template-columns: 164px 1fr 127px;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas:
+    "photo name rating-stars"
+    "photo type-price ."
+    "photo buttons rating";
+  border-bottom: 1px solid var(--basic-gray);
+}
+
+.lodging-image {
+  height: 90px;
+  padding: 0px;
+  margin: auto 0;
+  grid-area: photo;
+}
+
+.lodging-image img {
+  margin: 0px;
+  padding: 0px;
+}
+
+.lodging-name {
+  margin: auto 0;
+  padding: 0px;
+  grid-area: name;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.lodging-type-price {
+  grid-area: type-price;
+}
+
+.lodging-buttons {
+  margin: auto 0;
+  grid-area: buttons;
+}
+
+.lodging-rating-stars {
+  grid-area: rating-stars;
+  color: var(--basic-light-blue);
+  font-size: 26px;
+}
+
+.lodging-rating {
+  grid-area: rating;
+  background-color: var(--basic-lightest-gray);
+}
+
+.lodging-found-list p {
+  padding: 0px;
+  margin: auto 0;
 }
 
 .lodging-type,
@@ -512,12 +577,4 @@ img {
 .lodging-book:active {
   color: var(--basic-white-opacity);
   background-color: var(--basic-darker-brown);
-}
-
-.lodging-rating-stars {
-  color: var(--basic-light-blue);
-}
-
-.lodging-rating {
-  background-color: var(--basic-lightest-gray);
 }
