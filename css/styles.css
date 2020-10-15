@@ -970,14 +970,9 @@ img {
   border-radius: 3px;
 }
 
-/* .filter-input-checkbox + label:last-child::before {
-  top: 0;
-} */
-
-/* .filter-input-checkbox:focus + label::before {
+.filter-input-checkbox:focus + label::before {
   outline: 3px solid var(--basic-black);
 }
-Это уже задание на доступность разметки, я потом его раскомментирую */
 
  .infrastructure-checkbox + label::before {
   left: -1px;
@@ -991,7 +986,7 @@ img {
   border: none;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox + label::after {
   content: "";
   position: absolute;
   left: 0px;
@@ -1001,6 +996,11 @@ img {
   background-image: url("../img/icon-checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  opacity: 1;
 }
 
 .infrastructure-checkbox:checked + label::after {
