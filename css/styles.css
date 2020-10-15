@@ -212,6 +212,7 @@ img {
 
 .banner-welcome img {
   display: block;  /* Чтобы сетка не ломалась, если картинка не загрузится */
+  margin-bottom: 43px;
   background-color: var(--basic-lightest-blue);
 }
 
@@ -225,7 +226,7 @@ img {
   width: 470px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 43px;
+  margin-top: 0;
   margin-bottom: 15px;
   padding-bottom: 28px;
   font-size: 21px;
@@ -233,9 +234,11 @@ img {
 
 .banner-welcome p {
   width: 519px;
+  margin-top: 0;
+  margin-bottom: 52px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 52px;
+
 }
 
 /* Features 1 & 2 */
@@ -245,6 +248,11 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+.feature-1 div {
+  padding-top: 47px;
+  padding-bottom: 30px;
+}
+
 .feature-2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -252,6 +260,8 @@ img {
 
 .feature-2 div {
   order: 2;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .feature-1,
@@ -277,15 +287,15 @@ img {
 .feature-1 h2 {
   width: 122px;
   min-height: 43px;
-  margin-top: 47px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 
 .feature-1 p:first-of-type {
   width: 53px;
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
@@ -296,21 +306,21 @@ img {
   margin: 0 auto;
   padding: 0;
   padding-top: 1px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .feature-2 h2 {
   width: 151px;
   min-height: 43px;
-  margin-top: 50px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 
 .feature-2 p:first-of-type {
   width: 53px;
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
@@ -319,7 +329,6 @@ img {
 .feature-2 p:last-of-type {
   width: 303px;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 /* Ширину взял чуть шире, чем в макете. Если взять точь-в-точь как в макете, то даже при нулевом паддинге слова переносятся иначе, чем в Фигме */
 
@@ -338,27 +347,40 @@ img {
   background-position: 50% 50%;
 }
 
+.useful-info li {
+  padding-bottom: 82px;
+}
+
+.useful-info li:not(:last-child) {
+  padding-top: 60px;
+}
+
+.useful-info li:last-child {
+  padding-top: 55px;
+}
+
 .useful-info li:nth-child(1)::before {
   height: 72px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-image: url("../img/icon-house.svg");
 }
 
 .useful-info li:nth-child(2)::before {
   height: 72px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-image: url("../img/icon-burger.svg");
 }
 
 .useful-info li:nth-child(3)::before {
   height: 77px;
-  margin-top: 55px;
+  /* margin-top: 55px; */
   background-image: url("../img/icon-gift.svg");
 }
 
 .useful-info h3 {
   width: 250px;
   font-size: 21px;
+  margin-top: 0px;
   margin-bottom: 26px;
   margin-left: auto;
   margin-right: auto;
@@ -374,9 +396,7 @@ img {
 }
 
 .useful-info-item p {
-  min-height: 84px;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 
 .useful-info-item:nth-child(1) p {
@@ -411,11 +431,16 @@ img {
 }
 
 .features-3-5-list li {
-  min-height: 256px;
+  min-height: 179px;
   text-align: center;
 }
 
 /* Features 3-5 text positioning */
+
+.features-3-5 {
+  padding-top: 47px;
+  padding-bottom: 30px;
+}
 
 .feature-item:nth-child(1) h3 {
   width: 119px;
@@ -431,26 +456,25 @@ img {
 
 .feature-item h3 {
   min-height: 43px;
-  margin-top: 47px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .feature-item p:first-of-type {
-  margin-top: 25px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .feature-item p:last-of-type {
   min-height: 42px;
-  margin-top: 23px;
+  margin-top: 0;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
 }
 
 .feature-item:nth-child(1) p:last-of-type {
@@ -470,13 +494,14 @@ img {
 
 .search-hotel {
   position: relative;
+  padding-top: 56px;
   background-color: var(--basic-white);
   text-align: center;
 }
 
 .search-hotel .interest {
   width: 350px;
-  margin-top: 56px;
+  margin-top: 0;
   margin-bottom: 33px;
   margin-left: auto;
   margin-right: auto;
@@ -488,11 +513,12 @@ img {
 
 .search-hotel .catchword {
   width: 500px;
-  min-height: 78px;
+  /* min-height: 78px; */
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 44px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
 }
 
 .button {
@@ -590,6 +616,10 @@ img {
   position: absolute;
 }
 
+.icon-date {
+  cursor: pointer;
+}
+
 .search-hotel-form .icon-date-check-in {
   top: 62px;
   left: 483px;
@@ -629,6 +659,9 @@ img {
 
 .button-count-add:focus,
 .button-count-deduct:focus {
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px var(--basic-black);
+  outline: none;
   z-index: 2;
 }
 
@@ -684,13 +717,13 @@ img {
   text-align: right;
 }
 
-.sedona-geo img {
-  /* position: absolute;
-  left: 1px;
-  top: 0; */
-
+.container-map {
+  width: 1199px;
+  height: 593px;
+  margin-left: 1px; /* На макете карта прижата к правому краю. Между левым краем и картой "дырка" в один пиксель */
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
-/* На макете карта прижата к правому краю. Между левым краем и картой "дырка" в один пиксель */
 
 /* Footer */
 
@@ -709,11 +742,13 @@ img {
 
 /* Footer-contacts */
 
+
 .footer-contacts {
-  margin-top: 25px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -726,16 +761,16 @@ img {
 
 .footer-contacts a.footer-hashtag {
   display: block;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-contacts p {
   width: 251px;
-  margin-top: 14px;
-  margin-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Footer-social */
@@ -744,21 +779,28 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 156px;
+  width: 380px;
   min-height: 48px;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 36px;
+  padding-bottom: 36px;
   padding-left: 0px;
   list-style: none;
   text-align: center;
 }
 
-.footer-social-list-item:not(:nth-child(3n)) {
+.footer-social-list-item:not(:last-child):not(:nth-child(7n)) {
   margin-right: 6px;
 }
 
-.footer-social-list-item:not(:nth-last-child(-n+3)) {
+/* .footer-social-list-item:not(:nth-child(7n)) {
+  margin-right: 6px;
+} */
+
+.footer-social-list-item:not(:nth-last-child(-n+7)) {
   margin-bottom: 6px;
 }
 
@@ -810,8 +852,8 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 197px;
-  height: 47px;
-  margin-top: 38px;
+  height: 85px;
+  padding-top: 38px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -839,11 +881,12 @@ img {
 .lodging-filter {
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 7px;
+  padding-bottom: 32px;
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Filter Form */
@@ -869,6 +912,14 @@ img {
 }
 
 .filter legend {
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price-range-fieldset legend {
   margin-bottom: 12px;
   font-size: 16px;
   line-height: 21px;
@@ -881,12 +932,14 @@ img {
 }
 
 .filter ul {
-  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
   text-align: left;
 }
 
-.filter li {
+.filter li:not(:last-child) {
   margin-bottom: 25px;
 }
 
@@ -894,9 +947,12 @@ img {
   position: relative;
   display: block;
   width: max-content;
-  padding-left: 38px;
   cursor: pointer;
   user-select: none;
+}
+
+.option-infrastructure label {
+  padding-left: 38px;
 }
 
 .option-lodging-type label {
@@ -906,13 +962,22 @@ img {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 0;
   width: 23px;
   height: 23px;
   border: 2px solid var(--basic-white);
   border-radius: 3px;
 }
+
+/* .filter-input-checkbox + label:last-child::before {
+  top: 0;
+} */
+
+/* .filter-input-checkbox:focus + label::before {
+  outline: 3px solid var(--basic-black);
+}
+Это уже задание на доступность разметки, я потом его раскомментирую */
 
  .infrastructure-checkbox + label::before {
   left: -1px;
@@ -958,6 +1023,9 @@ img {
   justify-content: flex-start;
   position: relative;
   height: 36px;
+  margin-bottom: 9px;
+  padding-left: 65px;
+  padding-top: 4px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -968,7 +1036,6 @@ img {
 
 .price-controls label {
   height: 21px;
-  margin-top: 4px;
 }
 
 .price-controls input {
@@ -1013,12 +1080,13 @@ img {
 }
 
 .min-price {
-  margin-left: 65px;
+  /* margin-left: 65px; */
+  margin-right: 69px;
 }
 
-.max-price {
+/* .max-price {
   margin-left: 69px;
-}
+} */
 
 .min-price input {
   width: 59px;
@@ -1035,7 +1103,7 @@ img {
 .range-controls {
   position: relative;
   height: 24px;
-  margin-top: 9px;
+  margin-top: 0;
   margin-bottom: 22px;
   padding-top: 11px;
   padding-left: 4px;
@@ -1106,13 +1174,17 @@ img {
   background-color: var(--basic-white);
 }
 
+.filter-button:focus {
+  box-shadow: 0 0 5px 5px var(--basic-white);
+}
+
 /* Lodging found sort */
 
 .container-sort-by {
   display: flex;
   justify-content: flex-start;
   width: 1054px;
-  height: 86px;
+  min-height: 86px;
   margin: 0 auto;
 }
 
@@ -1124,13 +1196,13 @@ img {
 .lodging-found-sort-by {
   display: flex;
   flex-grow: 1;
-  height: 22px;
+  /* height: 22px; */
   margin: 0;
 }
 
 .lodging-found-sort-by li:not(:last-child) {
-  min-width: 81px;
-  padding-right: 10px;
+  min-width: 71px;
+  margin-right: 10px;
 }
 
 .lodging-found-sort-by li:last-child {
@@ -1138,18 +1210,22 @@ img {
 }
 
 .lodging-found-count {
-  min-width: 163px;
-  height: 28px;
-  margin: auto 0;
-  padding-right: 20px;
+  min-width: 143px;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  margin-right: 20px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .lodging-found-sort {
-  min-width: 116px;
-  padding-right: 10px;
+  min-width: 106px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 10px;
 }
 
 .lodging-found-sort-by,
@@ -1160,10 +1236,14 @@ img {
 
 .lodging-found-sort,
 .lodging-found-sort-by {
-  height: 22px;
-  margin: auto 0;
+  padding-top: 31px;
+  padding-bottom: 37px;
   font-size: 12px;
   line-height: 18px;
+}
+
+.lodging-found-sort-by {
+  margin: 0;
 }
 
 .lodging-found-sort-by .not-sorted-by {
@@ -1243,6 +1323,8 @@ img {
   grid-template-columns: 1fr max-content;
   width: 1054px;
   margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 30px;
 }
 
 .container-main-info {
@@ -1254,25 +1336,30 @@ img {
     "photo type-price"
     "photo buttons";
   align-items: start;
+  margin-right: 10px;
 }
 
 .lodging-image {
-  height: 90px;
-  padding-top: 30px;
+  width: 135px;
+  height: 96px;
+  padding-top: 6px;
   margin: 0;
   grid-area: photo;
 }
 
 .lodging-image img {
+  width: 135px;
+  height: 90px;
   margin: 0px;
   padding: 0px;
+  object-fit: contain;
+  background-color: var(--basic-white);
 }
 
 .lodging-name {
   grid-area: name;
-  margin-top: 24px;
+  margin-top: 0;
   margin-bottom: 7px;
-  margin-right: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1282,7 +1369,6 @@ img {
   grid-area: type-price;
   display: flex;
   justify-content: flex-start;
-  margin-right: 20px;
   margin-bottom: 15px;
 }
 
@@ -1292,20 +1378,18 @@ img {
 }
 
 .lodging-type-price p {
-  min-width: 116px;
-  padding-right: 10px;
+  min-width: 106px;
 }
 
 .lodging-type-price p:not(:last-child) {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .lodging-buttons {
   grid-area: buttons;
   display: flex;
   justify-content: flex-start;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
@@ -1360,6 +1444,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 5px;
 }
 
 /* Star-rating */
@@ -1368,7 +1453,7 @@ img {
   display: flex;
   justify-content: flex-end;
   margin-right: -2px;
-  margin-top: 29px;
+  margin-top: 0;
   margin-bottom: 47px;
   padding: 0;
   color: var(--basic-light-blue);
@@ -1399,7 +1484,7 @@ img {
 }
 
 .lodging-found-list-item:nth-child(2) .lodging-rating-stars {
-  margin-top: 28px;
+  margin-top: -1px;
   margin-bottom: 48px;
 }
 
@@ -1417,7 +1502,6 @@ img {
   width: max-content;
   max-width: 300px;
   margin: 0;
-  margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 12px;
   padding-top: 3px;
