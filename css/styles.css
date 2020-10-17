@@ -105,6 +105,12 @@ img {
   left: 531px;
 }
 
+.main-header-logo:focus,
+.site-navigation a:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -543,6 +549,10 @@ img {
   background-color: var(--basic-darker-brown);
 }
 
+.button-section-switch:focus {
+  outline: 2px solid var(--basic-black);
+}
+
 /* Form positioner */
 
 .form-positioner {
@@ -813,11 +823,15 @@ label:hover + .form-date-input:focus {
   background-color: var(--basic-darker-blue);
 }
 
+.button-find:focus {
+  outline: 2px solid var(--basic-black);
+}
+
 /* Sedona-geo */
 
 .sedona-geo {
   height: 473px;
-  padding-left: 1px;  /* На макете карта прижата к правому краю. Между левым краем и картой "дырка" в один пиксель */
+  padding-left: 1px;  /* макет */
   text-align: right;
 }
 
@@ -844,7 +858,6 @@ label:hover + .form-date-input:focus {
 }
 
 /* Footer-contacts */
-
 
 .footer-contacts {
   margin-bottom: 0px;
@@ -874,6 +887,11 @@ label:hover + .form-date-input:focus {
   width: 251px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.footer-contacts a:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 1px;
 }
 
 /* Footer-social */
@@ -940,6 +958,11 @@ label:hover + .form-date-input:focus {
   background-color: var(--basic-darker-blue);
 }
 
+.social-button:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 0;
+}
+
 .social-button:active::before {
   opacity: 0.3;
 }
@@ -973,6 +996,11 @@ label:hover + .form-date-input:focus {
 
 .copyright-link:active path {
   fill: var(--basic-few-dark-gray);
+}
+
+.copyright-link:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
 }
 
 /* Lodging filter */
@@ -1098,7 +1126,7 @@ label:hover + .form-date-input:focus {
   height: 23px;
   background-image:
     url("../img/icon-checkbox-on.svg"),
-    url("../img/icon-checkbox-on-disabled.svg"); /* Чтобы при загрузке страницы прогрузились сразу обе иконки */
+    url("../img/icon-checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0;
@@ -1119,6 +1147,11 @@ label:hover + .form-date-input:focus {
 
 .filter-input-checkbox:checked:disabled + label::after {
   background-image: url("../img/icon-checkbox-on-disabled.svg");
+}
+
+.filter-option:nth-child(3) label::before,
+.filter-option:nth-child(3) label::after {
+  top: -1px;
 }
 
 /* Price Controls */
@@ -1354,21 +1387,26 @@ label:hover + .form-date-input:focus {
   margin: 0;
 }
 
-.lodging-found-sort-by .not-sorted-by {
+.not-sorted-by {
   color: var(--basic-black-opacity);
   border-bottom: 1px dotted var(--basic-light-blue);
 }
 
-.lodging-found-sort-by .not-sorted-by:hover {
+.not-sorted-by:hover {
   color: var(--basic-light-blue);
 }
 
-.lodging-found-sort-by .not-sorted-by:active {
+.not-sorted-by:active {
   color: var(--basic-black);
   border-bottom: none;
 }
 
-.lodging-found-sort-by .sorted-by {
+.not-sorted-by:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
+}
+
+.sorted-by {
   color: var(--basic-light-blue);
 }
 
@@ -1408,6 +1446,11 @@ label:hover + .form-date-input:focus {
 
 .button-order:not(.button-order-activated):active path {
   fill: var(--basic-light-blue);
+}
+
+.button-order:not(.button-order-activated):focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
 }
 
 /* Lodging found list */
@@ -1485,6 +1528,11 @@ label:hover + .form-date-input:focus {
   color: var(--basic-black-opacity);
 }
 
+.lodging-name a:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 2px;
+}
+
 .lodging-type-price {
   grid-area: type-price;
   display: flex;
@@ -1538,6 +1586,11 @@ label:hover + .form-date-input:focus {
   background-color: var(--basic-darker-blue);
 }
 
+.lodging-more-details:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 0;
+}
+
 .lodging-buttons .lodging-book {
   padding-left: 16px;
   padding-right: 18px;
@@ -1551,6 +1604,11 @@ label:hover + .form-date-input:focus {
 .lodging-book:active {
   color: var(--basic-white-opacity);
   background-color: var(--basic-darker-brown);
+}
+
+.lodging-book:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: 0;
 }
 
 .container-rating {
