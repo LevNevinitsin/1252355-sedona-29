@@ -46,27 +46,19 @@ if (storageChildren) {
   searchFormChildrenCount.value = storageChildren;
 }
 
-searchForm.classList.add("search-hotel-form-initial");
+searchForm.classList.add("search-hotel-form-hidden");
 searchFormCheckInDateInput.required = false;
 disableFormElements();
 
 searchFormSwitchButton.addEventListener("click", function () {
-  if (!buttonWasClicked) {
-    searchForm.classList.remove("search-hotel-form-initial");
-    searchForm.classList.toggle("search-hotel-form-visible");
-  } else {
-    searchForm.classList.toggle("search-hotel-form-visible");
-    searchForm.classList.toggle("search-hotel-form-hidden");
-  }
-
-  if (searchForm.classList.contains("search-hotel-form-visible")) {
+  searchForm.classList.toggle("search-hotel-form-hidden");
+  if (!searchForm.classList.contains("search-hotel-form-hidden")) {
     enableFormElements();
   } else {
     disableFormElements();
     searchForm.classList.remove("search-hotel-form-error");
     searchFormCheckInDateInput.classList.remove("form-date-input-error");
   }
-  buttonWasClicked = true;
 });
 
 searchForm.addEventListener("submit", function (evt) {
